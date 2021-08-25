@@ -42,17 +42,17 @@
             <asp:Label ID="Label5" runat="server" Text="Posición"></asp:Label>
             <br />
             <br />
-            <asp:RadioButtonList ID="Posicion" runat="server" AutoPostBack="True" RepeatLayout="Flow" Width="320px">
+            <asp:RadioButtonList ID="Posición" runat="server" AutoPostBack="True" RepeatLayout="Flow" Width="320px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
                 <asp:ListItem Selected="True">Trabajador</asp:ListItem>
                 <asp:ListItem>Jefe</asp:ListItem>
-                <asp:ListItem>Visepresidente</asp:ListItem>
+                <asp:ListItem>Vicepresidente</asp:ListItem>
                 <asp:ListItem>Presidente</asp:ListItem>
             </asp:RadioButtonList>
             <br />
             <br />
-            <asp:Button ID="Grabar" runat="server" Text="Grabar" />
+            <asp:Button ID="Grabar" runat="server" Text="Grabar" OnClick="Grabar_Click" />
 &nbsp;&nbsp;
-            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" />
+            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" OnClick="Limpiar_Click" />
             <br />
             <br />
             <asp:Label ID="InfoLabel" runat="server" Height="48px" Width="680px"></asp:Label>
